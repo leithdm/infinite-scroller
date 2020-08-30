@@ -36,3 +36,26 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%); /* this centers the image based on the actual centre of the image. Otherwise it would be cetered based on the top-left of the image */
 }
+
+/* Image Container */
+.image-container {
+  margin: 10px 20%; /* image will take up 60% width of the screen*/
+}
+
+.image-container img {
+  width: 100%;
+  margin-top: 5px; 
+}
+
+/* Media Query: Large Smartphone */
+
+@media screen and (max-width: 600px) {
+  .image-container {
+    margin: 10px; 
+  }
+
+  h1 {
+    font-size: 20px; 
+  }
+
+}
