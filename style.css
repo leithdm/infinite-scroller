@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
 html {
   box-sizing: border-box;
@@ -6,4 +7,32 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
+  font-family: Alata, sans-serif; 
+
+}
+
+h1 {
+  text-align: center; 
+  margin-top: 25px; 
+  margin-bottom: 15px; 
+  font-size: 40px; 
+  letter-spacing: 3px; 
+  text-transform: uppercase;
+}
+
+/* Loader */
+.loader {
+  position: fixed; /* dont want it to move even if user scrolls on page*/
+  top: 0;
+  bottom: 0; 
+  left: 0; 
+  right: 0; /* using t,b,l,r with 0 makes it extend over the entire page*/
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.loader img {
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* this centers the image based on the actual centre of the image. Otherwise it would be cetered based on the top-left of the image */
 }
