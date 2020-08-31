@@ -2,5 +2,5 @@
 project illustrating an infinite-scroller
 
 ## Notes:
-1. Unsplash API
-2. Google-Fonts
+1. GET requests to the Unsplash API (https://api.unsplash.com/)
+2. Will require your own personal API Key.

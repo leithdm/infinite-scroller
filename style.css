@@ -22,7 +22,7 @@ h1 {
 
 /* Loader */
 .loader {
-  position: fixed; /* dont want it to move even if user scrolls on page*/
+  position: fixed; /* will not move even if the user scrolls*/
   top: 0;
   bottom: 0; 
   left: 0; 
@@ -34,7 +34,7 @@ h1 {
   position: fixed; 
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* this centers the image based on the actual centre of the image. Otherwise it would be cetered based on the top-left of the image */
+  transform: translate(-50%, -50%); /* this centers the image based on the actual centre of the image. Without this transform it would be cetered based on the top-left of the image */
 }
 
 /* Image Container */
