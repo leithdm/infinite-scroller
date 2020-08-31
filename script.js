@@ -46,11 +46,25 @@ async function getPhotos() {
     try {
         const response = await fetch(apiUrl);
         photosArray = await response.json(); 
+        console.log(photosArray);
         displayPhotos();
     } catch (error) {
         // Catch Error Here
     }
 }
+
+// Check If Scrolling Near Bottom Of Page, Load More Photos
+//**NOTES: */
+//1. window.scrollY = distance from top of page user has scrolled.
+//2. window.innerHeight = total height of browser window.
+//3. document.body.offsetHeight = height of everything in the body, including what is not within view.
+window.addEventListener('scroll', () => {
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight -1000) {
+        getPhotos();
+    }
+});
+
+
 
 // On Load
 getPhotos(); 
